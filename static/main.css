@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Girassol|Homemade+Apple|Niconne|Sacramento|Short+Stack|Yesteryear&display=swap');
+
+/* font-family: 'Homemade Apple', cursive;
+font-family: 'Niconne', cursive; */
+
+body {
+    font-family: 'Short Stack', cursive;
+}
+
+.text-1 {
+    font-family: 'Yesteryear', cursive;
+}
+
+.text-2 {
+    font-family: 'Sacramento', cursive;
+}
+
+.head1 {
+    font-family: 'Girassol', cursive;
+    text-align: center;
+}
+
+h5 {
+    margin-top: 15px;
+    ;
+}

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+    <title>Forms</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-3 head1">Hogwards Admission Form</h1>
+
+        <small class="text-muted lead mb-2 ">OF COURSE! ITS HAPPENING IN YOUR HEAD HARRY.. 
+                <h4 class="blockquote-footer">by Albus Dumbledor</h4>
+            </small>
+        <form action="/signup" method="post">
+            <div class="form-group">
+                <label for="First-name">First Name</label>
+                <input type="text" class="form-control" name="First-name" id="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" class="form-control" name="Last-name" id="last-name">
+            </div>
+            <div class="form-group">
+                <label for="signup-username">Username</label>
+                <input type="text" class="form-control" name="username" id="signup-username" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" class="form-control" name="password" id="signup-password" required>
+            </div>
+            
+            <div class="form-group">
+                <h2 class="display-4 text-2">Animal you would like to bring!</h2>
+                <small class="text-muted lead mb-2">Wangardiam LeviOsa OOsa...
+                    <h4 class="blockquote-footer">by Hermoine grainger</h4>
+                </small>
+                <div class="form-check">
+                    <div class="form-group">
+                        <input type="radio" name="Animals" id="">
+                        <label name="Animals" value="1">Owl</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="Animals" id="">
+                        <label name="Animals" value="2">Mouse</label>
+                        <small class="text-muted"> Be sure, it could be human hiding from his master(peter petigrew)</small>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="Animals" id="">
+                        <label name="Animals" value="3">Cat</label>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="Animals" id="">
+                        <label name="Animals" value="4">Niffler</label>
+                        <small id="niffler" class="">Niffler owners must return the jwellery stolen by that cute little bastard!</small>
+
+
+
+                    </div>
+
+
+
+                </div>
+                <h2 class="display-4 text-2">Choose Your House!</h2>
+                <div id="parent">
+                    <div id="houses">
+
+
+                        <small class="text-muted lead mb-2">Potter!!..
+                        <h4 class="blockquote-footer">by Draco Malfoy</h4>
+                    </small>
+                        <div class="form-check">
+                            <div class="form-group">
+                                <input type="radio" name="houses" id="">
+                                <label name="Animals" value="1">Gryffindor</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" name="houses" id="">
+                                <label name="Animals" value="2">slytherin</label>
+                                <small class="text-muted">Okay!Just don't be a dick..</small>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" name="houses" id="">
+                                <label name="Animals" value="3">Hufflepuff</label>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" name="houses" id="">
+                                <label name="Animals" value="4">Ravenclaw</label>
+
+
+                            </div>
+                            <button id="sorting_btn" class="button">Sorting Hat!</button>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <h2 class="text-2 display-4">Now write your Views on magic !</h2>
+            <small class="text-muted lead mb-2">YOU're a WIZARD Harry!!
+                <h4 class="blockquote-footer">by Hagred</h4>
+            </small>
+            <div class="form-group">
+                <textarea name="textarea" id="" class="form-control" rows="8">Start Here....</textarea>
+
+
+            </div>
+            <button class="btn btn-lg btn-outline-dark ">Submit-form</button>
+<hr>
+
+
+
+            <!-- <h2 class="lead">OR let sorting hat decide!!</h2>
+            After taking Js courses -->
+        </form>
+        <button class="btn btn-lg btn-outline-dark "> <a href="login.html">Login</a></button>
+    </div>
+    <footer>
+        <h5>All strudents must bring their Adhar-card. </h5>
+        <h4 class="blockquote-footer">by Ministry of Magic</h4>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../sorting-hat.js"></script>
+</body>
+
+</html>
